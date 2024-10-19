@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'FITS Software',
+  tagline: 'Getting IT done',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  //organizationName: 'facebook', // Usually your GitHub org/user name.
+  //projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'nl',
+    locales: ['nl'],
   },
 
   presets: [
@@ -39,6 +39,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        /*
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -61,6 +62,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        */
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,12 +76,13 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'FITS Software',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo van FITS Software',
+          src: 'img/fits_software_logo.jpg',
         },
         items: [
+          /*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -92,11 +95,13 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          */
         ],
       },
       footer: {
         style: 'dark',
         links: [
+          /*
           {
             title: 'Docs',
             items: [
@@ -136,8 +141,9 @@ const config = {
               },
             ],
           },
+          */
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} FITS Software`,
       },
       prism: {
         theme: prismThemes.github,

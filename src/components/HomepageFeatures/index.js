@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import linkdinLogo from '@site/static/img/Linkdin-Logo.png';
 
 const FeatureList = [
   {
@@ -35,7 +36,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -49,7 +50,8 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+/*
+export function HomepageFeatures_old() {
   return (
     <section className={styles.features}>
       <div className="container">
@@ -57,6 +59,24 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+*/
+
+export default function HomepageFeatures() {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          <div className={clsx('col col--12')}>
+            <div className="text--center padding-horiz--md">
+              <Heading as="h3">FITS Software is een eenmanszaak met >25 jaar ervaring in development and operations (DevOps).</Heading>
+              <a href="https://www.linkedin.com/in/freeklips" target="_blank"><img style={{width: "200px"}} src={linkdinLogo} /></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
