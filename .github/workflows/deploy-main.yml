@@ -35,16 +35,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      # Build docusaurus
-      - name: Install npm dependencies and build website
-        run: |
-          npm ci
-          npm run build
 
       # Upload build artifact to github pages
       - name: Upload build artifact

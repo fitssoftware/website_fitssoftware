@@ -2,7 +2,8 @@
 /node_modules
 
 # Production
-/build
+# Build hold the static html for now
+#/build
 
 # Generated files
 .docusaurus
@@ -18,3 +19,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# backup of the docusaurus folder
+/docusaurus
+
+# al other files to exculde for now
+/images
+docker-compose.yml
+start.cmd
+
